@@ -30,7 +30,12 @@ streamlit run langchain_agent_app.py
 1. 把密钥放到环境变量（例如 `SILICONFLOW_API_KEY`）
 2. 将 `langchain_agent_app.py` 里的 `Config.API_KEY` 改为读取环境变量（如需我来改，我可以在你确认后再改代码）
 
+设置环境变量示例：
+```bash
+# Windows PowerShell（临时，仅当前终端会话）
+$env:SILICONFLOW_API_KEY="YOUR_KEY"
+```
+
 ## 常见问题
 - 依赖缺失：请确认已执行 `pip install -r requirements.txt`
 - 上传解析失败：确认安装了对应库（PDF/Word/Excel 的解析依赖见 `requirements.txt`）
-
